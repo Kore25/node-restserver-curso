@@ -11,11 +11,6 @@ const { verificaToken, verificaAdmin_Role } = require('../middlewares/autenticac
 app.get('/usuario', verificaToken, (req, res) => {
     // res.json('get Usuario Local');
 
-    return res.json({
-        usuario: req.usuario,
-        nombre: req.usuario.nombre,
-        email: req.usuario.email
-    })
 
     let desde = req.query.desde || 0;
     desde = Number(desde);

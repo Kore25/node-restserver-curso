@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-app.use(require('./rutas/usuario'));
+app.use(require('./rutas/index'));
 
 
 
